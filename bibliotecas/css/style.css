@@ -1,0 +1,37 @@
+body{
+	font-family: 'Pangolin', sans-serif;
+	background: url("../../imagens/fundo.jpg");
+    background-size: cover ;
+	background-repeat: no-repeat;
+}
+
+/* Input */
+.searcher{
+	margin-top: 135px;
+}
+
+.btn-searcher{
+	margin-top: 9px
+}
+
+.input-field{
+	margin-top: 0;
+}
+
+/* Cartões */
+#img_container{
+	height: 510px;
+	width: 510px
+}
+
+.card-title{
+	font-size: 50px;
+}
+
+/* Preloads */
+.preloader-wrapper{
+	margin: 205px;
+	margin-top: 205px
+}
+
+

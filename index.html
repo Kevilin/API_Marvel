@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="bibliotecas/css/materialize.min.css" />
+	<link type="text/css" rel="stylesheet" href="bibliotecas/css/style.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="bibliotecas/javascript/md5-min.js"></script>
+	<script src="bibliotecas/javascript/jquery-3.2.1.min.js"></script>
+	<script src="scripts/busca.js"></script>
+	<title>Buscar heróis</title>
+</head>
+<body>
+
+   <div class="row searcher">
+   		<div class="input-field col s4 push-s3 pull-s3">  
+            <h5>Busque pelo seu herói favorito!</h5> 
+   				<input id="character" type="text" placeholder="Exemplo: Hulk, Spider-Man, Iron Man ..." class="validate">              
+   		</div>
+   		<div class="btn-searcher col s2 push-s3 pull-s3">
+   			<button id="execute" class="btn waves-effect waves-light red accent-4">
+   				<span>Procurar</span><i class="material-icons right">Procurar</i>
+   			</button>
+   		</div>
+   </div>
+   <!-- Resultados -->
+   <!-- Imagem -->
+   <div class="row">
+   		<div class="col 6s push-s2"> 
+   			<div class="card">
+   				<div class="card-image">
+                  <!-- Preload -->
+                  <div class="preloader-wrapper big active"> 
+                      <div class="spinner-layer spinner">
+                        <div class="circle-clipper left">
+                           <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                           <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                           <div class="circle"></div>
+                        </div>
+                      </div>
+                 </div>
+                 <!-- Termina Preload -->
+   					<img id="img_container" src="imagens/imagem_default.png" alt="">
+   				</div>
+   			</div>
+   		</div>
+   	<!-- Descrição -->
+           <div class="contanier_description col s4 push-s2">
+            <div class="card">
+               <!-- Preload -->
+               <div class="progress">
+                  <div class="indeterminate"></div>
+               </div>
+               <!-- Termina o Preload -->
+               <div class="card-content">
+                  <span id="nome_heroi" class="card-title"></span>
+                  <span class="card-title">Descrição:</span>
+                  <p id="descricao_heroi">
+                  </p>
+               </div>
+               <div class="card-action">
+                  <a id="link_externo_marvel" target="_blank">Mais informações</a>
+               </div>
+            </div>
+         </div> 
+   </div>
+</body>
+</html>
